@@ -23,6 +23,7 @@ class Follow extends React.Component {
     return (
       <div>
         <div className="thank-you">Thank you for using our application!</div>
+          <div id="Follow"></div> {/* Follow anchor link - This is here on purpose - and I like it. */}
          <div className="footer">
            <div className="row">
              <div className="follow-us">
