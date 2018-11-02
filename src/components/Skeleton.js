@@ -25,7 +25,7 @@ export default class Skeleton extends React.Component {
   render() {
     return (
       <div>
-        <div id="Home"></div> {/* Home anchor link - This is here on purpose - and I like it. */} 
+        <div id="Home"></div> {/* Home anchor link - This is here on purpose - and I like it. */}
          <Navbar color="dark" dark fixed="top" expand="md">
            <NavbarBrand href="/">AWP - Awesome Weather Pal</NavbarBrand>
            <NavbarToggler onClick={this.toggle} />
