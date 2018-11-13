@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto:300,400');
 
 @media only screen and (max-width: 600px) {
+  .search-form {
+    margin-top: 40px;
+  }
   .thank-you {
     font-size: 1.5em;
   }
@@ -36,7 +39,6 @@
 .navitem {
   font-weight: bold;
 }
-
 .jumbotron {
   margin-bottom: 0;
 }
