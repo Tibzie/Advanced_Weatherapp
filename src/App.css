@@ -42,6 +42,19 @@
 .jumbotron {
   margin-bottom: 0;
 }
+.main-tab {
+  padding: 20px 0px !important;
+  margin: 0 !important;
+}
+.main-info {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Roboto;
+  font-weight: 400;
+}
+.degree-symbol {
+  font-family: Roboto;
+}
 .thank-you {
   padding: 20px 10px 15px 10px;  /* top right bottom left */
   background-color: rgba(52, 58, 64, 0.9);
