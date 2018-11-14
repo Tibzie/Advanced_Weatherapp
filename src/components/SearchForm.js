@@ -6,7 +6,7 @@ import { Jumbotron,
   Input,
   Button } from 'reactstrap';
 
-const SearchForm = () => (
+const SearchForm = props => (
       <div className="search-form">
         <Jumbotron>
           <h1 className="display-3">Welcome to our app</h1>
@@ -14,18 +14,20 @@ const SearchForm = () => (
           </p>
           <hr/>
 
-          <Form>
+          <Form onSubmit={props.getWeather}>
             <FormGroup>
               <Label for="cityField">City: </Label>
-              <Input type="text" name="city" id="cityField" placeholder="city here... e.g. 'Budapest'" />
+              <Input type="text" name="city" id="cityField" className="city" placeholder="city here... e.g. 'Budapest'" />
             </FormGroup>
 
             <FormGroup>
               <Label for="countryField">Country: </Label>
-              <Input type="text" name="country" id="countryField" placeholder="country here... e.g. 'Hungary'" />
+              <Input type="text" name="country" id="countryField" className="country" placeholder="country here... e.g. 'Hungary'" />
             </FormGroup>
+            <Button type="reset">Reset</Button>
+            <Button color="info" className="float-right">Search</Button>
           </Form>
-          <Button color="info" className="float-right">Search</Button>
+
         </Jumbotron>
 
       </div>
