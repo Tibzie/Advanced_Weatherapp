@@ -41,9 +41,13 @@
 }
 .jumbotron {
   margin-bottom: 0;
+  border-radius: 0px;
+}
+.city-field {
+  margin-bottom: 50px;
 }
 .main-tab {
-  padding: 20px 0px !important;
+  padding: 20px 0px 0px 0px !important;
   margin: 0 !important;
 }
 .main-info {
@@ -52,8 +56,27 @@
   font-family: Roboto;
   font-weight: 400;
 }
-.degree-symbol {
+
+.sub-tab {
+  padding: 10px 0px 40px 0px !important;
+  margin: 0 !important;
+}
+.sub-info {
+  text-align: center;
+  font-size: 1.15em;
   font-family: Roboto;
+  font-weight: 400;
+}
+.temp-high {
+  margin-left: 20px;
+}
+.error-message {
+  text-align: center;
+  border: 0;
+  border-radius: 0px;
+  background-color: #db2219;
+  color: #f4bcba;
+  margin: 0;
 }
 .thank-you {
   padding: 20px 10px 15px 10px;  /* top right bottom left */
