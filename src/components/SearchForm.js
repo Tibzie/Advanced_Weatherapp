@@ -6,6 +6,7 @@ import { Jumbotron,
   Input,
   Button } from 'reactstrap';
 
+
 const SearchForm = props => (
       <div className="search-form">
         <Jumbotron>
@@ -13,19 +14,14 @@ const SearchForm = props => (
           <p className="lead">Please enter your desired city and country in the fields below.<br />
           </p>
           <hr/>
-
           <Form onSubmit={props.getWeather}>
-            <FormGroup>
+            <FormGroup className="city-field">
               <Label for="cityField">City: </Label>
               <Input type="text" name="city" id="cityField" className="city" placeholder="city here... e.g. 'Budapest'" />
             </FormGroup>
 
-            <FormGroup>
-              <Label for="countryField">Country: </Label>
-              <Input type="text" name="country" id="countryField" className="country" placeholder="country here... e.g. 'Hungary'" />
-            </FormGroup>
             <Button type="reset">Reset</Button>
-            <Button color="info" className="float-right">Search</Button>
+            <Button color="primary" className="float-right">Search</Button>
           </Form>
 
         </Jumbotron>
